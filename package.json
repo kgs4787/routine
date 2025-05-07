@@ -1,0 +1,14 @@
+{
+  "name": "routine",
+  "version": "1.0.0",
+  "description": "개인 루틴 관리 애플리케이션",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
